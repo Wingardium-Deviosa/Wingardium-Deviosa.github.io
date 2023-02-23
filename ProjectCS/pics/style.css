@@ -1,3 +1,10 @@
 main {
     display: block none;
+    
+}
+
+h2 {
+    margin: 0;
+   border-style: groove;
+   text-align: center;
 }
