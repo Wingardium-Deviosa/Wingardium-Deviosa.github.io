@@ -1,4 +1,4 @@
-![WD animated logo](images/wdanimatedlogo.gif)
+![WD animated logo](images/wdanimated.gif)
 
 # Wingardium-Deviosa Website
 
