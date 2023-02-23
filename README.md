@@ -2,7 +2,7 @@
 
 
 ## Project Cheat Sheet
-###./ProjectCS
+### ./ProjectCS
 
 
 ## Gruppenaufteilung
