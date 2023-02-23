@@ -1,5 +1,4 @@
-<p align="center">
- ![WD animated logo](images/wdanimatedlogo.gif)
+![WD animated logo](images/wdanimatedlogo.gif)
 
 # Wingardium-Deviosa Website
 
@@ -17,4 +16,3 @@
 | Team 2 | Ihor, Barış, Ömer | Linux |
 | Team 3 | David, Alper, Kai | Home |
 | Team 4 | Alex, Yahya, Kim | Markdown |
-</p>
