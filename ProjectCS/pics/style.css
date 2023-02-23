@@ -4,7 +4,7 @@ main {
 }
 
 h2 {
-    margin: 0;
+    margin: 1;
    border-style: groove;
    text-align: center;
 }
