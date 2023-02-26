@@ -1,30 +1,231 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Git Cheat Sheets</title>
-  <link rel="icon" type="image/png" href="/Wingardium-Deviosa.github.io/ProjectCS/GitSA/bilder/notes.png">
-  <link rel="stylesheet" href="/Wingardium-Deviosa.github.io/ProjectCS/GitSA/styles.css">
-</head>
-<body>
-  <header>
-    <h1>Git Cheat Sheets</h1>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Cheat Sheets</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/Wingardium-Deviosa.github.io/ProjectCS/GitSIA/bilder/notes.png"
+    />
+    <link
+      rel="stylesheet"
+      href="/Wingardium-Deviosa.github.io/ProjectCS/GitSIA/styles.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>Wingardium-Deviosa LOGO</h2>
+      <h1>Git Cheat Sheets</h1>
+
+      <nav class="navbar">
         <ul>
-            <li><a href="#">Startseite</a></li>
-            <li><a href="#">previous cheet sheet</a></li>
-            <li><a href="#">next cheat Sheet</a></li>
+          <li><a href="#">Startseite</a></li>
+          <li><a href="#">previous cheet sheet</a></li>
+          <li><a href="#">next cheat Sheet</a></li>
         </ul>
-    </nav>
-</header>
-<main>
-    <p>blablabal...</p>
-</main>
-<footer>
-    <p>Copyright © 2023</p>
-</footer>
-   
-</body>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <p>
+          Git ist das freie und open source verteilte Versionskontrollsystem,
+          dass für alles verantwortlich ist, was mit GitHub zu tun hat und lokal
+          auf Ihrem Computer stattfindet. Dieser Spickzettel enthält die
+          wichtigsten und am häufigsten benutzten, Git-Befehle zum einfachen
+          Nachschlagen.
+        </p>
+      </div>
+      <div class="guilink">
+        <h3>Download GitHub Desktop</h3>
+
+        <p>
+          Mit plattformspezifischen Installationsprogrammen für Git bietet
+          GitHub auch die dieMöglichkeit, mit den neuesten Versionen des
+          Kommandozeilen-Tools auf dem Kommandozeilen-Tool auf dem Laufenden zu
+          bleiben und gleichzeitig eine grafische Benutzeroberfläche für die
+          tägliche Interaktion, Überprüfung und Repository-Synchronisierung.
+        </p>
+        <h4>GitHub für Windows</h4>
+        <p>https://windows.github.com</p>
+        <h4>GitHub für Mac</h4>
+        <p>https://mac.github.com</p>
+        <br />
+        <p>
+          <b>
+            Für die Plattformen Linux und Solaris ist die neueste Version auf
+            der der offiziellen Git-Website.
+          </b>
+        </p>
+        <h4>Git für Alle Plattformen</h4>
+        <p>htp://git-scm.com</p>
+      </div>
+      <section class="container1">
+        <h3>EINRICHTUNG & INSTALLATION</h3>
+        <p>Überprüfen Sie, ob git bereits installiert ist</p>
+        <pre><code>git --version</code></pre>
+      </section>
+      <section class="container2">
+        <h3>section2</h3>
+
+        <p>Wenn keine Versionsnummer angezeigt wird, müssen Sie git manuell installieren.</p>
+      </section>
+
+      <div class="console">
+        <div class="console-header">
+          <h3 class="console-title">Console</h3>
+        </div>
+        <div class="console-body">
+          <pre class="console-output">
+            &gt; Try by your own
+          </pre>
+          <input
+            type="text"
+            class="console-input"
+            placeholder="Enter command..."
+            onkeydown="handleInput(event)"
+          />
+        </div>
+      </div>
+      <script>
+        function handleInput(event) {
+          if (event.keyCode === 13) {
+            // Enter key
+            var input = event.target.value;
+            event.target.value = "";
+            var output = document.querySelector(".console-output");
+            var newLine = document.createElement("div");
+            newLine.textContent = "> " + input;
+            output.appendChild(newLine);
+          }
+        }
+      </script>
+
+
+
+ 
+<script>
+function handleInput(event) {
+if (event.keyCode === 13) {
+var input = event.target.value;
+event.target.value = "";
+var output = document.querySelector(".console-output");
+var newLine = document.createElement("div");
+
+    // check for clear command
+    if (input === "clear") {
+      output.innerHTML = "";
+      return;
+    }
+    
+
+// run git command
+var result = runCommand(input);
+
+newLine.textContent = "$ " + input + "\n" + result;
+output.appendChild(newLine);
+}
+}
+
+function runCommand(command) {
+var commands = command.split(" ");
+var executable = commands[0];
+var args = commands.slice(1);
+var result;
+
+switch (executable) {
+case "git":
+  result = runGitCommand(args);
+  break;
+default:
+  result = "Command not found: " + executable;
+}
+
+return result;
+}
+var isInitialized = false; 
+function runGitCommand(args) {
+var result;
+
+
+
+  switch (args[0]) {
+    case "init":
+      if (isInitialized) {
+        result = "Reinitialized existing Git repository in /path/to/repo/.git/";
+      } else {
+        result = "Initialized empty Git repository in /path/to/repo/.git/";
+        isInitialized = true;
+      }
+  break;
+
+case "add":
+  result = "Nothing specified, nothing added. hint: Maybe you wanted to say 'git add .'?";
+  break;
+case "commit":
+  result = "[master (root-commit) 0b92321] Initial commit\n 1 file changed, 0 insertions(+), 0 deletions(-)\n create mode 100644 file.txt";
+  break;
+case "status":
+  result = "On branch master\n\nNo commits yet\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n\tfile.txt\n\nnothing added to commit but untracked files present (use \"git add\" to track)";
+  break;
+case "log":
+  result = "commit 0b9232194e4f94bb9b576439f663ee69f2a895b7 (HEAD -> master)\nAuthor: John Doe <johndoe@example.com>\nDate:   Fri Feb 26 09:52:14 2023 -0800\n\n    Initial commit";
+  break;
+case "branch":
+  result = "* master";
+  break;
+case "checkout":
+  result = "Switched to branch 'new-feature'";
+  break;
+case "merge":
+  result = "Already up to date.";
+  break;
+case "remote":
+  result = "origin";
+  break;
+case "push":
+  result = "Everything up-to-date";
+  break;
+case "pull":
+result = "Already up-to-date.";
+break;
+case "fetch":
+result = "From https://github.com/user/repo\n * branch main -> FETCH_HEAD\n";
+break;
+case "clone":
+result = "Cloning into 'repo'...\nremote: Enumerating objects: 100, done.\nremote: Counting objects: 100% (100/100), done.\nremote: Compressing objects: 100% (80/80), done.\nremote: Total 100 (delta 30), reused 85 (delta 15), pack-reused 0\nReceiving objects: 100% (100/100), done.\nResolving deltas: 100% (30/30), done.";
+break;
+case "config":
+if (args.length === 1) {
+result = "user.name=John Doe\nuser.email=johndoe@example.com\n";
+} else if (args.length === 2) {
+result = "error: key does not contain a section: " + args[1];
+} else {
+result = "";
+}
+break;
+case "--version":
+result = "git version 2.33.1";
+break;
+case "add .":
+result = "";
+break;
+
+default:
+  result = "Unknown command: git " + args[0];
+}
+
+return result;
+}
+</script>
+
+
+
+    </main>
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+  </body>
 </html>
