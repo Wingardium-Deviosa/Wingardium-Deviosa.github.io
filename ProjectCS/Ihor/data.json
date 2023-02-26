@@ -1,0 +1,116 @@
+[
+    {
+        "id": "1",
+        "commandname": "git add [file]",
+        "description": "add a file as it looks now to your next commit (stage) <br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "2",
+        "commandname": "git branch",
+        "description": "list your branches. a * will appear next to the currently active branch<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "3",
+        "commandname": "git branch [branch-name]",
+        "description": "commit your staged content as a new commit snapshot<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "4",
+        "commandname": "git checkout",
+        "description": "switch to another branch and check it out into your working directory<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "5",
+        "commandname": "git clone [url]",
+        "description": "retrieve an entire repository from a hosted location via URL<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "6",
+        "commandname": "git commit -m “[descriptive message]”",
+        "description": "create a new branch at the current commit<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "7",
+        "commandname": "git config --global user.name “[firstname lastname]”",
+        "description": "set a name that is identifiable for credit when review version history<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "8",
+        "commandname": "git config --global user.email “[valid-email]”",
+        "description": "set an email address that will be associated with each history marker<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "9",
+        "commandname": "git config --global color.ui auto",
+        "description": "set automatic command line coloring for Git for easy reviewing<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "10",
+        "commandname": "git config --global core.excludesfile [file]",
+        "description": "system wide ignore pattern for all local repositories<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "11",
+        "commandname": "git diff",
+        "description": "diﬀ of what is changed but not staged<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "12",
+        "commandname": "git diff --staged",
+        "description": "diﬀ of what is staged but not yet committed<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "13",
+        "commandname": "git diff branchB...branchA",
+        "description": "show the diﬀ of what is in branchA that is not in branchB<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "14",
+        "commandname": "git fetch [alias]",
+        "description": "fetch down all the branches from that Git remote<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "15",
+        "commandname": "git init",
+        "description": "initialize an existing directory as a Git repository<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "16",
+        "commandname": "git log",
+        "description": "show all commits in the current branch’s history<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "17",
+        "commandname": "git log branchB..branchA",
+        "description": "show the commits on branchA that are not on branchB<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "18",
+        "commandname": "git log --follow [file]",
+        "description": "show the commits that changed file, even across renames<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    },
+    {
+        "id": "19",
+        "commandname": "git log --stat -M",
+        "description": "show all commit logs with indication of any paths that moved<br><br> <i>syntax:</i> <br>...<br> <b>image:</b><br>&#8987;",
+        "image": ""
+    }
+]

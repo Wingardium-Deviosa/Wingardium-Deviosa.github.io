@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Cheat Sheet - WD</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Git Cheat Sheet</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
+                    </div>
+                </div>
+
+                <a class="mdl-navigation__link" href="">Home</a>
+                <a class="mdl-navigation__link" href="">Linux CS</a>
+                <a class="mdl-navigation__link" href="">Markdown CS</a>
+
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Menü</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Befehle hinzufügen</a>
+                <a class="mdl-navigation__link" href="">Als PDF speichern</a>
+                <a class="mdl-navigation__link" href="https://windows.github.com">GitHub for Windows</a>
+                <a class="mdl-navigation__link" href="https://mac.github.com">GitHub for Mac</a>
+                <a class="mdl-navigation__link" href="https://git-scm.com/downloads">Git for All Platforms</a>
+
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            
+            <template id="main-template">
+                <div class="container">
+                <div class="commandname" onclick="reply_click(this.id)"></div>
+                <div class="idnumber" id="">
+                    <p class="description"></p>
+                    <img src="" class="" />
+                </div>
+            </div>
+            </template>
+
+            <div class="page-content" id="commands"><!-- content goes here --></div>
+            <script src="app.js"></script>
+
+        </main>
+    </div>
+
+
+
+    <script>
+
+        function reply_click(clicked_id) {
+            let hideId = "id" + clicked_id;
+            let divHeight = document.getElementById(hideId).style.height;
+            if (divHeight == 0) {
+                document.getElementById(hideId).style.height = 165 + "px";
+            } else {
+                document.getElementById(hideId).style.height = "";
+            }
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
