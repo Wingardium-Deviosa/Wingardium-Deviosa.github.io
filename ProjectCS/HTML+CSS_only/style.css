@@ -1,0 +1,65 @@
+body {
+    background-color: #010409;
+}
+
+p {
+    margin: 10px 20px;
+}
+
+main {
+    min-width: 800px;
+    margin: auto;
+    width: 50%;
+}
+
+.commandname {
+    background: #161b22;
+    padding: 1.5em 2em 1.5em 1.5em;
+    font-family: monospace;
+    color: green;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.idnumber {
+    transition: height 1s ease-out;
+    height: 0;
+    overflow: hidden;
+    font-family: monospace;
+    color: white;
+    line-height: 25px;
+    position: relative;
+}
+
+.container {
+    border-color: #30363d;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 0.5em;
+}
+
+.idnumber:target {
+    height: 165px;
+}
+
+.IconCloseWindow {
+    position: absolute;
+    color: white;
+    display: flex;
+    /*justify-content: flex-end;*/
+    right: 20px;
+    top: 9px;
+    transition: height 1s ease-out;
+    font-size: 1.5em;
+    opacity: 0.3;
+    font-weight: 600;
+}
+
+.IconCloseWindow:hover {
+    opacity: 1;
+}
