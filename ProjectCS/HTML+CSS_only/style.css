@@ -1,5 +1,8 @@
 body {
     background-color: #010409;
+    margin: 0;
+    line-height: 20px;
+    font-size: 14px;
 }
 
 p {
@@ -10,6 +13,7 @@ main {
     min-width: 800px;
     margin: auto;
     width: 50%;
+    padding: 50px;
 }
 
 .commandname {
@@ -56,10 +60,115 @@ main {
     top: 9px;
     transition: height 1s ease-out;
     font-size: 1.5em;
-    opacity: 0.3;
+    opacity: 0.5;
     font-weight: 600;
 }
 
 .IconCloseWindow:hover {
     opacity: 1;
+}
+
+header {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #161b22;
+    padding: 20px 10px;
+    min-width: 800px;
+}
+
+.header a {
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: hsl(0, 0%, 60%);
+    transition: 0.3s;
+}
+
+.header a:hover {
+    color: #f1f1f1;
+}
+
+.header a.logo {
+    font-weight: bold;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right a {
+    padding: 20px 5px;
+    margin: 0px 15px;
+}
+
+.menuIcon {
+    width: 18px;
+    height: 2px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.menuButton {
+    position: absolute;
+    margin-top: -8px;
+}
+
+#headerTitle {
+    color: white;
+    position: absolute;
+    left: 65px;
+    font-size: 1.4em;
+}
+
+.sidenav:target {
+    width: 240px;
+    border-right: 1px solid #30363d;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #161b22;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    white-space: nowrap;
+}
+
+.sidenav a {
+    padding: 16px 40px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 75%);
+    ;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 8px 8px 8px 32px;
+}
+
+.sidenav .closebtn:hover {
+    color: #f1f1f1;
+    background-color: transparent;
 }
