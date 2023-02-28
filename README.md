@@ -6,6 +6,7 @@
 ## Project Cheat Sheet
 ### ./ProjectCS
 <a href="https://wingardium-deviosa.github.io/ProjectCS"><img src="https://img.shields.io/badge/Wingardium-Deviosa-red?style=for-the-badge&logo=github"></a>
+<a href="https://discord.gg"><img src="https://img.shields.io/discord/1075060578927792239?label=Wingardium%20Deviosa&logo=discord&logoColor=white&style=for-the-badge"></a>
 
 ## Gruppenaufteilung
 
