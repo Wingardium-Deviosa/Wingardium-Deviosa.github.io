@@ -1,0 +1,46 @@
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.gallery img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery img.active {
+  opacity: 1;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: border 0.5s ease-in-out;
+}
+
+.thumbnails img.active,
+.thumbnails img:hover {
+  border: 2px solid #333;
+}
